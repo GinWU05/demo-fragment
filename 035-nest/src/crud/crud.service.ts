@@ -4,6 +4,7 @@ import { UpdateCrudDto } from './dto/update-crud.dto';
 
 @Injectable()
 export class CrudService {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   create(createCrudDto: CreateCrudDto) {
     return 'This action adds a new crud';
   }
@@ -16,6 +17,7 @@ export class CrudService {
     return `This action returns a #${id} crud`;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   update(id: number, updateCrudDto: UpdateCrudDto) {
     return `This action updates a #${id} crud`;
   }
