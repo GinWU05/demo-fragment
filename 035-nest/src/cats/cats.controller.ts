@@ -4,9 +4,9 @@ import type { Request } from 'express';
 @Controller('cats')
 export class CatsController {
   @Get()
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   findAll(@Req() request: Request): string {
-    return 'this action returns all cats';
+    return (
+      JSON.stringify(request.query) + '\n' + 'this action returns all cats'
+    );
   }
 }
